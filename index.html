@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pulse: Rogue Chaos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <canvas id="game"></canvas>
+    <div class="hud">
+      <div id="objective">Objective: Flip through gates</div>
+      <div id="status">Room 1 · Tutorial</div>
+      <div class="controls">
+        <button id="pauseBtn">Pause</button>
+        <button id="muteBtn">Mute</button>
+        <button id="fullscreenBtn">Fullscreen</button>
+      </div>
+    </div>
+    <div id="prompt" class="prompt"></div>
+  </div>
+
+  <div id="pausePanel" class="panel hidden">
+    <h2>Paused</h2>
+    <label>Master <input id="masterVol" type="range" min="0" max="1" step="0.01" /></label>
+    <label>SFX <input id="sfxVol" type="range" min="0" max="1" step="0.01" /></label>
+    <label>Music <input id="musicVol" type="range" min="0" max="1" step="0.01" /></label>
+    <button id="resumeBtn">Resume</button>
+    <button id="restartBtn">Restart Run</button>
+  </div>
+
+  <script type="module" src="game.js"></script>
+</body>
+</html>
