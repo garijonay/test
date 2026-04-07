@@ -1,0 +1,9 @@
+{
+  "name": "Chile Breeding Tracker",
+  "short_name": "ChileTracker",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f8f5",
+  "theme_color": "#1d4d2f",
+  "icons": []
+}
